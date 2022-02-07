@@ -1,0 +1,61 @@
+.intro__container {
+    background-image: url("../img/Bitmap.jpg");
+    padding: 116px 0 116px;
+    border-radius: 12px;
+
+    @media only screen and (max-width: $tablet) {
+
+        background-image: url("../../img/tabletcofe.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+
+        .intro__title {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .intro__paragraph {
+            font-size: 15px;
+            line-height: 1.2;
+        }
+
+    }
+
+    @media only screen and (max-width: $mobile) {
+
+        background-image: url("../img/mobilecoffe.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        .intro__title {
+            font-size: 40px;
+            line-height: 1.2;
+        }
+    
+        .intro__paragraph {
+            font-size: 15px;
+            line-height: 1.2;
+
+        }
+    }
+
+   
+
+    .intro__div {
+        margin-left: 86px;
+    }
+
+    .intro__title {
+        width: 493px;
+        font-size: 72px;
+        @include fraunces;
+        line-height: 72px;
+        color: white;
+    }
+
+    .intro__paragraph {
+        @include intro-description;
+        margin: 32px 0 56px;
+    }
+}
